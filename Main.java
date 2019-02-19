@@ -76,7 +76,7 @@ class Simulasi{
         DecimalFormat df = new DecimalFormat("#.###");
         df.setRoundingMode(RoundingMode.CEILING);
         for(int i=0 ; i<this.lamaPinjaman ; i++){
-            System.out.println("Bulan: " + i+1 + ". Angsuran Pokok: " + df.format(this.cicilanPokok) + ". Biaya Admin: " + df.format(this.biayaAdmin) + ". Angsuran Bunga: " + df.format(this.calcAngsuranBunga(i)) + ". Total Angsuran: " + df.format(this.totalAngsuran[i]) + ". Sisa Pinjaman: " + df.format((this.pinjaman-((i+1)*this.cicilanPokok))));
+            System.out.println("Bulan: " + (i+1) + ". Angsuran Pokok: " + df.format(this.cicilanPokok) + ". Biaya Admin: " + df.format(this.biayaAdmin) + ". Angsuran Bunga: " + df.format(this.calcAngsuranBunga(i)) + ". Total Angsuran: " + df.format(this.totalAngsuran[i]) + ". Sisa Pinjaman: " + df.format((this.pinjaman-((i+1)*this.cicilanPokok))));
         }
     }
 }
